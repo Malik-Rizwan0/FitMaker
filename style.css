@@ -1,0 +1,379 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Vazirmatn", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #1d1d1d;
+    color: #fff;
+}
+
+:root {
+    --primary-color: #D90A14;
+
+}
+
+header {
+    padding: 20px 0px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 800;
+    user-select: none;
+}
+
+footer  .logo .square ,header .logo .square {
+    width: 30px;
+    height: 20px;
+    display: block;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 2px;
+}
+
+footer .logo .Red ,header .logo .Red {
+    color: var(--primary-color);
+}
+
+header .logo-text ,footer .logo-text {
+    font-size: 12px;
+}
+
+header .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header .links a:hover {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    transition: all .3s;
+    transform: scale(1.1);
+}
+
+header .header-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px;
+}
+
+header .header-btn .login {
+    border: 1px solid var(--primary-color);
+    padding: 3px 8px;
+    border-radius: 10px;
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+header .header-btn .login:hover {
+    /* border: none; */
+    padding: 3px 8px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+header .header-btn .sign-up {
+    border: 1px solid var(--primary-color);
+    padding: 3px 8px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+header .header-btn .sign-up:hover {
+    border: 1px solid var(--primary-color);
+    padding: 3px 8px;
+    background-color: transparent;
+    /* color: #fff; */
+    border-radius: 10px;
+    color: var(--primary-color);
+}
+
+.hero {
+    width: 100%;
+
+}
+
+.hero .data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.hero .data h2 {
+    /* margin-top: 50px; */
+    font-size: 40px;
+}
+
+.hero .data .color {
+    background: linear-gradient(45deg, var(--primary-color), #ff5e00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 72px;
+    text-align: center;
+
+}
+
+.hero .data p {
+    padding: 30px 30px 20px 70px;
+}
+
+.hero .data .hero-btn1 {
+    padding: 10px 50px;
+    background-color: #D90A14;
+    border-radius: 30px;
+    border: 0px;
+}
+
+.hero .data .hero-btn1:hover {
+    padding: 10px 50px;
+    color: #ff5e00;
+    background: transparent;
+    border-radius: 30px;
+    border: 1px solid #ff5e00;
+}
+
+.hero .data .hero-btn2 {
+    padding: 10px 50px;
+    color: #ff5e00;
+    border-radius: 30px;
+    border: 1px solid #ff5e00;
+}
+
+.hero .data .hero-btn2:hover {
+    padding: 10px 50px;
+    background-color: #D90A14;
+    color: #fff;
+    border-radius: 30px;
+    border: 0px;
+    transition: all 0.3s;
+}
+
+.hero .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .img img {
+    box-shadow: 0 100px 200px rgb(200, 72, 22, 0.2);
+    /* Horizontal, Vertical, Blur, Color */
+    border-radius: 100%;
+    /* Optional: adds rounded corners */
+}
+
+.hero .img .circle {
+    padding: 15px;
+    border-radius: 100%;
+}
+
+.hero .img .cirlce1 {
+    box-shadow: 0 1px 47px rgb(255 72 0);
+    display: block;
+    position: relative;
+    top: -250px !important;
+    left: 250px;
+}
+
+.hero .img .cirlce2 {
+    box-shadow: 0 1px 47px rgb(255 72 0);
+    display: block;
+    position: relative;
+    top: 200px !important;
+    left: -50px;
+}
+
+.hero .img .box {
+    font-size: 12px;
+    position: relative;
+    left: -100px;
+    top: 100px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border-left: 1px solid var(--primary-color);
+    border-top: 1px solid var(--primary-color);
+    border-bottom: 1px solid #bc3614;
+    border-right: 1px solid #bc3614;
+}
+
+.hero .img .box-data {
+    width: 100px;
+}
+
+.hero .img .box1 {
+    left: 212px;
+    top: -92px;
+}
+
+.hero .img .box2 {
+    left: 120px;
+    top: 155px;
+}
+
+.hero .img .box3 {
+    left: -162PX;
+    top: 133px;
+}
+
+.hero .img .box4 {
+    top: -155px;
+    left: -315px;
+}
+
+.repo .repo-card1,
+.repo .repo-card2,
+.repo .repo-card3 {
+    border-right: 3px solid transparent;
+    /* border-radius: 5px; */
+    background: linear-gradient(#1d1d1d, #1d1d1d) padding-box,
+        /* Inner background */
+        linear-gradient(180deg, var(--primary-color), #e96547) border-box;
+}
+
+.repo-card {
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    ;
+    justify-content: space-between;
+}
+
+.repo .repo-card .heading {
+    font-size: 16px;
+    font-weight: 400;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-evenly; */
+    text-align: center;
+}
+
+.repo .repo-card1 .heading span,
+.repo .repo-card3 .heading span {
+    font-size: 40px;
+    font-weight: 400;
+    color: #D90A14;
+}
+
+.repo .repo-card2 .heading span,
+.repo .repo-card4 .heading span {
+    font-size: 40px;
+    font-weight: 400;
+    color: #ff5e00;
+}
+
+.repo .repo-card .text {
+    font-size: 12px;
+    color: #8a8888;
+}
+
+section {
+    padding: 50px 0px;
+}
+
+.section-heading {
+    font-size: 35px;
+    line-height: 65px;
+    font-weight: 700;
+}
+
+h2 span:first-child {
+    color: #fff;
+}
+
+h2 span:last-child {
+    color: var(--primary-color);
+}
+
+.Service-cards img {
+    border-radius: 15px;
+}
+
+.package .package-btns {
+    width: auto;
+    display: block;
+    border-radius: 30px;
+    padding: 0px;
+    margin: 20px auto;
+    border: 1px solid var(--primary-color);
+
+}
+
+.package-btns button {
+    border: none;
+    margin: 0px;
+    border-radius: 30px;
+    padding: 10px 40px;
+}
+
+.package .package-btns .Monthly {
+    background-color: var(--primary-color);
+}
+
+.package-card {
+    border: 1px solid #bc3614;
+    padding: 20px;
+    background: linear-gradient( 180deg , #49464642 , #da743938  , #e28e8e1c);
+}
+
+.package-card div , .package-card ul , .package-card li ,.package-card span{
+    background-color: transparent;
+}
+.package-card .package-name-h {
+    margin: 10px 0px;
+    color: #ff5e00;
+}
+
+.package .package-card .package-name {
+    /* font-family: Gagalin; */
+    font-family: "Luckiest Guy", cursive;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.4px;
+}
+.package .package-card .package-desc-h ,.package .package-card  .package-feature-h{
+    margin: 10px 0px;
+    color: #CD4E17;
+    font-size: 12px;
+}
+.package .package-card  .package-price{
+    font-size:30px;
+}
+.package .package-card .package-price span{
+    font-size: 16px;
+}
+.package .package-card .package-choose{
+    width: 85%;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color:  #CD4E17;   
+}
+.package-card2{
+    border: 1px solid var(--primary-color);
+    background: linear-gradient( 180deg , #49464642 , #d90a142f, #e28e8e1c);
+}
+.package .package-card2 .package-choose{
+    background-color:  var(--primary-color);   
+}
+.package .package-card2 .package-desc-h ,.package .package-card2  .package-feature-h{
+    color: var(--primary-color);
+}

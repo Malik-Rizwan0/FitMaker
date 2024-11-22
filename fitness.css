@@ -1,0 +1,518 @@
+/* Importing Google Font - Montserrat */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.fitness {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fitness .slider-wrapper {
+    overflow: visible;
+    max-width: 1200px;
+    /* margin: 0 70px 55px; */
+}
+
+.fitness .card-list .card-item {
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    /* background: rgba(255, 255, 255, 0.2); */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.fitness .card-item:hover p,
+.card-item:hover p i {
+    color: #D90A14;
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+
+.fitness .card-item img {
+    width: 100%;
+}
+
+.fitness .card-item p {
+    width: 80%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.fitness .swiper-button-prev {
+    position: relative !important;
+    left: 90% !important;
+    bottom: auto;
+    top: -30px !important;
+}
+
+.fitness .swiper-button-next {
+    position: relative !important;
+    left: 95% !important;
+    bottom: auto;
+    top: -30px !important;
+    top: auto;
+}
+
+.fitness .swiper-button-prev:after,
+.swiper-button-next:after {
+    color: #fff;
+    padding: 10px;
+    background-color: transparent !important;
+    font-size: 20px !important;
+    border: 1px solid #fff;
+}
+
+
+/* testimonials  */
+
+
+
+
+
+.testimonials .data {
+    display: flex;
+    align-items: end;
+}
+
+.testimonials .swiper-wrapper {
+    width: 130%;
+}
+
+.testimonials .slider-wrapper1 {
+    overflow: hidden;
+    /* max-width: 1200px; */
+    /* margin: 0 70px 55px; */
+}
+
+.testimonials .swiper1 {
+    display: flex;
+    align-items: end;
+
+}
+
+.testimonials .card-list .card-item {
+    height: auto;
+    color: #fff;
+    user-select: none;
+    padding: 15px;
+    display: flex;
+    margin: 0px 0px 0px 0px !important;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 10px;
+    /* backdrop-filter: blur(30px); */
+    background: #5B0408;
+    margin-right: 20% !important;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    
+    /* border: 1px solid rgba(255, 255, 255, 0.5); */
+}
+
+.testimonials .card-list div,
+.testimonials .card-list h4 {
+
+    background: #5B0408;
+}
+
+.testimonials .card-list .card-item p {
+    background: #5B0408;
+    font-size: 12px;
+    margin-bottom: 0PX;
+    /* background-color: transparent; */
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    /* Number of lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.testimonials .card-list .card-item .div p {
+    color: #a3a3a3;
+    bottom: 10px;
+    position: relative;
+}
+
+.testimonials .slider-wrapper1 .swiper-pagination-bullet {
+    background-color: transparent;
+    background: #fff;
+    height: 5px;
+    width: 25px;
+    border-radius: 0px;
+    opacity: 0.5;
+}
+
+.testimonials .slider-wrapper1 .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.testimonials .slider-wrapper1 .swiper-slide-button {
+    color: #fff;
+    /* margin-top: -55px; */
+    transition: 0.2s ease;
+}
+
+.testimonials .swiper-slide-button i {
+    font-size: 16px;
+    margin: 5px;
+    color: #ffffff50;
+    border: 1px solid #ffffff50;
+    padding: 5px;
+
+    border-radius: 10px;
+}
+
+.testimonials .swiper-button-prev1 {
+    /* position: relative;
+    right: -93%;
+    bottom: 40px; */
+    z-index: 99999;
+    /* border: 2px solid #fff; */
+    /* display: inline-block; */
+}
+
+.testimonials .swiper-button-next1 {
+    z-index: 99999;
+    /* border: 2px solid #fff; */
+    /* position: relative;
+    right: -93%;
+    bottom: 40px; */
+    /* display: inline-block; */
+}
+
+.swiper-slide-button:hover i {
+    border: 1px solid #fff;
+    transition: all 0.5;
+    color: #fff;
+}
+
+
+/* trainer */
+.Trainer .card-item{
+    /* box-shadow: rgba(91, 4, 8, 0.25) 0px 54px 55px, 
+            rgba(91, 4, 8, 0.12) 0px -12px 30px, 
+            rgba(91, 4, 8, 0.12) 0px 4px 6px, 
+            rgba(91, 4, 8, 0.17) 0px 12px 13px, 
+            rgba(91, 4, 8, 0.09) 0px -3px 5px; */
+            box-shadow: rgba(91, 4, 8, 0.3) 0px 19px 38px, rgba(91, 4, 8, 0.22) 0px 15px 12px;
+
+}
+.Trainer img {
+    width: 100%;
+}
+
+.Trainer .swiper-button-prev {
+    position: relative !important;
+    left: 90% !important;
+    bottom: auto;
+    top: -30px !important;
+}
+
+.Trainer .swiper-button-next {
+    position: relative !important;
+    left: 95% !important;
+    bottom: auto;
+    top: -30px !important;
+    top: auto;
+}
+
+.Trainer .swiper-slide-button i {
+    color: #ffffff50;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: transparent !important;
+    font-size: 20px !important;
+    border: 1px solid #ffffff50;
+    border-radius: 10px;
+}
+
+.Trainer .swiper-slide-button:hover i {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
+    background-color: #D90A14 !important;
+    border-radius: 30px !important;
+    transform: scaleX(2) !important;
+}
+
+.swiper-pagination2 {
+    transform: none !important;
+}
+
+.Trainer .card-footer {
+    background-color: #36363685;
+    padding: 10px;
+}
+
+.Trainer .card-footer h4,
+.Trainer .card-footer a i {
+    background-color: transparent;
+}
+
+.Trainer .card-footer p {
+    background-color: transparent;
+    font-size: 14px;
+    position: relative;
+    bottom: 10px;
+}
+
+.Trainer .card-footer a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #fff;
+    /* word-spacing: 10px; */
+    letter-spacing: 1px;
+}
+.Trainer .card-footer:hover i{
+    color: #D90A14;
+    font-weight: 700;
+    padding-left: 15px ;
+    transition: all 0.5s;
+    transform: scaleX(3);
+
+}
+.Trainer-btn button i{
+    color: #ff5e00;
+    font-size: 20px;
+}
+.Trainer-btn button {
+    border: 1px solid #ff5e00;
+    padding:10px 20px ;
+    border-radius: 10px;
+    color: #ff5e00 ;
+}
+.Trainer-btn button:hover , .Trainer-btn button:hover i{
+    background-color: #D90A14;
+    color: #fff;
+    border: none;
+    transition: all 0.5s;
+}
+
+
+
+
+
+
+
+/* Fitmaker */
+.Fitmaker-cards .col-6{
+padding:7px 10px ;    
+}
+.Fitmaker-card{
+    background-clip: padding-box;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    
+}
+.Fitmaker-card-1{
+    background-image: url(Img/6\ section\ 1.png);
+    height: 30vw;
+    max-height: 380px;
+}
+.Fitmaker-card-2 ,.Fitmaker-card-3 ,.Fitmaker-card-4 , .Fitmaker-card-5 {
+    max-height: 184px;
+    height: 14.5vw;
+}
+.Fitmaker-card-2{
+    background-image: url(Img/6\ section\ 2.png);
+}
+.Fitmaker-card-3{
+    background-image: url(Img/6\ section\ 3.png);
+}
+.Fitmaker-card-4{
+    background-image: url(Img/6\ section\ 4.png);
+} 
+.Fitmaker-card-5{
+    background-image: url(Img/6\ section\ 5.png);
+}
+.meow{
+    background : linear-gradient(0deg, #000000, transparent) !important;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+}
+.Fitmaker-card p , .Fitmaker-card a{
+    background-color: transparent;
+    display: contents;
+}
+.Fitmaker-card-1 h4 {
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.4rem;
+}
+.Fitmaker-card-2 h4,.Fitmaker-card-3 h4,.Fitmaker-card-4 h4, .Fitmaker-card-5 h4{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+}
+.Fitmaker-card div , .Fitmaker-card span , .Fitmaker-card  i {
+    background-color: transparent;
+    font-size: 1rem;
+}
+.Fitmaker-card-2 span  ,.Fitmaker-card-3 span,.Fitmaker-card-4 span, .Fitmaker-card-5 span{
+    
+    font-size: 0.8rem;
+}
+
+
+
+/* Join */
+.Join .section-heading{
+    font-size: 25px;
+}
+.Join  p{
+    font-size: 14px;
+    margin: 0px;
+}
+/* .Join .col-6{
+
+    box-shadow: rgba(91, 4, 8 ,
+    0.25) 0px 30px 60px -12px inset, rgba(91, 4, 8 , 0.3) 0px 18px 36px -18px inset;
+} */
+.Join .card{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #1d1d1d;
+}
+.Join .card h5{
+    margin: 0%;
+    padding: 10px 0px;
+    font-size: 16px;
+    border: none;
+}
+.Join .card h5 span:last-child{
+    color: #D90A14 !important;
+}
+.Join .card p{
+    padding:5px 10px;
+    font-size: 12px;
+    border: none;
+}
+.Join .right{
+    background-color: #5B0408;
+    border-radius: 10px;
+    min-height: 25vw;
+    /* height:  100vh; */
+    width: 95%;
+}
+.Join .right div{
+    background-color: transparent;
+
+}
+.Join .right .f-heading{
+    font-size: 20px;
+}
+.f-sign-up {
+    color: #D90A14;
+    border-bottom: 2px solid #D90A14 ;
+} 
+.f-login{
+    color: #ffffff50;
+}
+.Join .right form {
+    padding: 20px 20px;
+}
+.Join .right form , .Join .right form label , .Join .right form i, .Join .right form input , .Join form img{
+    background-color: transparent;
+}
+
+.Join .right form input{
+    width: 100%;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.Join .right form i{
+    left: 10px;
+    font-size: 18px;
+    position: relative;
+    bottom: -29px;
+}
+.Join .right form input::placeholder{
+    color: #fff;
+    font-size: 16px;
+}
+.Join .right form input[type = submit]{
+    margin: 10px 0px;
+    background-color: #D90A14;
+    border: none;
+}
+.Join .right form label{
+    bottom: -18px;
+    position: relative;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+hr{
+    background: #fff;
+    height: 4px;
+    width: 47% !important;
+    color: #fff;
+}
+.Join .right form .google{
+    width: 100%;
+    height: 45px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+footer, footer div, footer span , footer p{
+    background-color:#181818;
+}
+footer{
+    /* height: 100vh; */
+    padding: 40px 0px;
+}
+footer p{
+    padding: 30px 0px;
+    font-size: 14px ;
+    color: #a3a3a3;
+}
+footer p .red{
+    color: #D90A14;
+}
+footer p .orange{
+    color: #ff5e00;
+}
+@media (max-width: 768px) {
+    .fitness .slider-wrapper {
+        margin: 0 10px 40px;
+    }
+
+    .fitness .slider-wrapper .swiper-slide-button {
+        /* display: none; */
+    }
+
+}

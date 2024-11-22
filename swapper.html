@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Slider HTML and CSS | CodingNepal</title>
+    <!-- Linking SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="fitness.css"> -->
+
+
+
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+            background-color: #1d1d1d;
+            color: #fff;
+        }
+
+        .trainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .trainer .slider-wrapper {
+            overflow: visible;
+            max-width: 1200px;
+            /* margin: 0 70px 55px; */
+        }
+
+        .trainer .card-list .card-item {
+            height: auto;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            backdrop-filter: blur(30px);
+            /* background: rgba(255, 255, 255, 0.2); */
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .trainer .card-item:hover p,
+        .card-item:hover p i {
+            color: #D90A14;
+            transition: all 0.5s;
+            transform: scale(1.1);
+        }
+
+        .trainer .card-item img {
+            width: 100%;
+        }
+
+        .trainer .card-item p {
+            width: 80%;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+
+        /* .trainer .swiper-button-prev {
+            position: relative !important;
+            left: 90% !important;
+            bottom: auto;
+            top: -30px !important;
+        }
+
+        .trainer .swiper-button-next {
+            position: relative !important;
+            left: 95% !important;
+            bottom: auto;
+            top: -30px !important;
+            top: auto;
+        } */
+
+        .trainer .swiper-button-prev2,
+        .swiper-button-next2 {
+            color: #fff;
+            padding: 10px;
+            display: contents;
+            background-color: transparent !important;
+            font-size: 20px !important;
+            border: 1px solid #fff;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="trainer">
+        <div class="container swiper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="row">
+                        <h2 class="section-heading text-start">
+                            <span>Our Fitness </span>
+                            <span>Tool</span>
+                        </h2>
+                        <div class="swiper-pagination2"></div>
+                        <div class="swiper-slide-button swiper-button-prev2"><i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <div class="swiper-slide-button swiper-button-next2"><i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <p class="text-center">
+                        Access a variety of tools to help you reach your fitness goals more effectively.
+                    </p>
+                </div>
+                <div class="slider-wrapper2">
+                    <div class="card-list swiper-wrapper">
+                        <div class="card-item swiper-slide text-start">
+                            <img src="Img/5 section 1.png" alt="">
+                            <p>Learn More <i class="fa-solid fa-arrow-right"></i></p>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="Img/5 section 2.png" alt="">
+                            <p>Learn More <i class="fa-solid fa-arrow-right"></i></p>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="Img/5 section 3.png" alt="">
+                            <p>Learn More <i class="fa-solid fa-arrow-right"></i></p>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="Img/5 section 4.png" alt="">
+                            <p>Learn More <i class="fa-solid fa-arrow-right"></i></p>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="Img/5 section 1.png" alt="">
+                            <p>Learn More <i class="fa-solid fa-arrow-right"></i></p>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="Img/5 section 2.png" alt="">
+                            <p>Learn More <i class="fa-solid fa-arrow-right"></i></p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="swiper-pagination"></div> -->
+                    <!-- <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Linking SwiperJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking custom script -->
+    <!-- <script src="script.js"></script> -->
+    <script>
+
+
+        // Fitness Tool swipper
+        const swiper2 = new Swiper('.slider-wrapper2', {
+            loop: true,
+            grabCursor: true,
+            spaceBetween: 30,
+
+            // Pagination bullets
+            pagination: {
+                el: '.swiper-pagination2',
+                clickable: true,
+                dynamicBullets: true
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next2',
+                prevEl: '.swiper-button-prev2',
+            },
+
+            // Responsive breakpoints
+            breakpoints: {
+                0: {
+                    slidesPerView: 3
+                },
+                768: {
+                    slidesPerView: 4
+                },
+                1024: {
+                    slidesPerView: 4
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
