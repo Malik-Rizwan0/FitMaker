@@ -35,9 +35,9 @@
     <!-- overall -->
     <link rel="stylesheet" href="style.css">
     <!-- fitness tool and next section  -->
-    <link rel="stylesheet" href="fitness.css">
+    <!-- <link rel="stylesheet" href="fitness.css"> -->
     <!-- FAQ  -->
-    <link rel="stylesheet" href="faq.css">
+    <!-- <link rel="stylesheet" href="faq.css"> -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
@@ -48,7 +48,7 @@
 
 <body>
     <header class="container-fluid">
-        <div class="row">
+        <div class="row d-none d-md-flex">
             <div class="col-2 d-flex align-items-end flex-column justify-content-end ">
                 <div class="d-flex align-items-center flex-column">
                     <div class="logo">
@@ -75,8 +75,9 @@
         </div>
     </header>
     <section class="container-fluid hero">
+    
         <div class="row stats-section" id="stats-section">
-            <div class="col-6 data">
+            <div class="col-12 col-md-6 data">
                 <div>
                     <h2 class="text-center">
                         <div>Achive Your</div>
@@ -94,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 img">
+            <div class="col-12 col-md-6 img">
                 <div class="circle cirlce1 ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
                 <div class="box box1  text-center">
                     <div class="stat-number" data-target="80"><span>+</span> 0</div>
@@ -121,63 +122,9 @@
 
 
 
-    <!-- Stats section -->
-    <!-- <section class="stats-section" id="stats-section">
-        <div class="stats-overlay"></div>
-        <div class="container stats-content">
-            <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
-                    <div class="stat-item">
-                        <div class="stat-icon">
-                            <i class="fas fa-user-graduate"></i>
-                        </div>
-                        <div class="stat-info">
-                            <div class="stat-number" data-target="65739">0 <span>+</span></div>
-                            <div class="stat-text">Ongoing Students</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
-                    <div class="stat-item">
-                        <div class="stat-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div class="stat-info">
-                            <div class="stat-number" data-target="4500">0 <span>+</span></div>
-                            <div class="stat-text">Current Students</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
-                    <div class="stat-item">
-                        <div class="stat-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <div class="stat-info">
-                            <div class="stat-number" data-target="200">0 <span>+</span></div>
-                            <div class="stat-text">Rank Holders</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
-                    <div class="stat-item">
-                        <div class="stat-icon">
-                            <i class="fas fa-chalkboard-teacher"></i>
-                        </div>
-                        <div class="stat-info">
-                            <div class="stat-number" data-target="100">0 <span>+</span></div>
-                            <div class="stat-text">Faculties</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-
     <!-- Repo section  -->
     <div class="container-fluid repo">
-        <div class="container">
+        <div class="container-xl">
             <div class="row">
                 <div class="col-12 col-md-3 repo-card1">
                     <div class="repo-card ">
@@ -223,16 +170,16 @@
                 </p>
             </div>
             <div class="row">
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-md-3">
                     <img width="100%" src="Img/2nd section 1.png" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-md-3">
                     <img width="100%" src="Img/2nd section 2.png" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-md-3">
                     <img width="100%" src="Img/2nd section 3.png" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-md-3">
                     <img width="100%" src="Img/2nd section 4.png" alt="">
                 </div>
             </div>
@@ -435,7 +382,7 @@
     <section class="fitness">
         <div class="container swiper">
             <div class="container-fluid">
-                <div class="row">
+                <div class="row py-3">
                     <h2 class="section-heading text-start">
                         <span>Our Fitness </span>
                         <span>Tool</span>
@@ -501,10 +448,10 @@
             </p>
         </div>
         <div class="row data">
-            <div class="col-3">
+            <div class="col-sm-4 col-md-3 d-none d-sm-block">
                 <img src="Img/4 section 1.png" width="100%" alt="">
             </div>
-            <div class="col-6 ">
+            <div class="col-12 col-sm-8 col-md-6 ">
                 <div class="container swiper1">
                     <div class="slider-wrapper1">
                         <div class="card-list swiper-wrapper">
@@ -638,7 +585,7 @@
                     <div class="swiper-slide-button swiper-button-next1"><i class="fa-solid fa-arrow-right"></i></div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-3 d-none d-md-flex">
                 <img src="Img/4 section 2.png" width="45%" alt="">
                 <img src="Img/4 section 3.png" width="45%" alt="">
             </div>
@@ -997,7 +944,7 @@
     <footer class="container-fluid">
         <div class="container-fluid container-lg">
             <div class="row">
-                <div class="col-5">
+                <div class="col-12 col-md-5">
                     <div class=" d-flex justify-content-start">
                         <div class="d-flex align-items-center flex-column">
                             <div class="logo">
@@ -1016,12 +963,28 @@
                         Guidance. <span class="orange">Join Our Community</span>  and Start Your Journey Towards a Healthier, Stronger You. Ready to
                         Make a Change?
                     </p>
-                    <div class="icons">
-                        
+                    <div class="icons d-flex justify-content-evenly ">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
                     </div>
                 </div>
-                <div class="col-7"></div>
-                <!-- <div class="col-4"></div> -->
+                <div class="col-12 col-md-7 pt-3 p-md-0">
+                    <div>
+                        <b class="red">
+                            Company
+                        </b>
+                        <p class="d-flex flex-column justify-content-center align-items-evenly">
+                            <a href="#">About Us</a>
+                            <a href="#">Our Services</a>
+                            <a href="#">Careers</a>
+                            <a href="#">Blog</a>
+                            <a href="#">testimonials</a>
+                            <a href="#">Contact Us</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

@@ -26,7 +26,8 @@ header {
     user-select: none;
 }
 
-footer  .logo .square ,header .logo .square {
+footer .logo .square,
+header .logo .square {
     width: 30px;
     height: 20px;
     display: block;
@@ -35,11 +36,13 @@ footer  .logo .square ,header .logo .square {
     border-radius: 2px;
 }
 
-footer .logo .Red ,header .logo .Red {
+footer .logo .Red,
+header .logo .Red {
     color: var(--primary-color);
 }
 
-header .logo-text ,footer .logo-text {
+header .logo-text,
+footer .logo-text {
     font-size: 12px;
 }
 
@@ -65,41 +68,38 @@ header .header-btn {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 12px;
+    font-size: 14px;
     padding: 0px;
     margin: 0px;
 }
 
 header .header-btn .login {
     border: 1px solid var(--primary-color);
-    padding: 3px 8px;
-    border-radius: 10px;
+    padding: 5px 8px 3px 8px;
+    border-radius: 5px;
     color: var(--primary-color);
     margin-right: 5px;
+    font-weight: 700;
 }
 
 header .header-btn .login:hover {
-    /* border: none; */
-    padding: 3px 8px;
-    border-radius: 10px;
     background-color: var(--primary-color);
+    font-weight: 400;
     color: #fff;
 }
 
 header .header-btn .sign-up {
     border: 1px solid var(--primary-color);
-    padding: 3px 8px;
-    border-radius: 10px;
+    padding: 5px 8px 3px 8px;
+    border-radius: 5px;
     background-color: var(--primary-color);
     color: #fff;
 }
 
 header .header-btn .sign-up:hover {
+    font-weight: 700;
     border: 1px solid var(--primary-color);
-    padding: 3px 8px;
     background-color: transparent;
-    /* color: #fff; */
-    border-radius: 10px;
     color: var(--primary-color);
 }
 
@@ -144,7 +144,6 @@ header .header-btn .sign-up:hover {
 }
 
 .hero .data .hero-btn1:hover {
-    padding: 10px 50px;
     color: #ff5e00;
     background: transparent;
     border-radius: 30px;
@@ -159,7 +158,6 @@ header .header-btn .sign-up:hover {
 }
 
 .hero .data .hero-btn2:hover {
-    padding: 10px 50px;
     background-color: #D90A14;
     color: #fff;
     border-radius: 30px;
@@ -234,8 +232,10 @@ header .header-btn .sign-up:hover {
 }
 
 .hero .img .box4 {
-    top: -155px;
-    left: -315px;
+
+    top: -132px;
+    left: -308px;
+
 }
 
 .repo .repo-card1,
@@ -331,12 +331,16 @@ h2 span:last-child {
 .package-card {
     border: 1px solid #bc3614;
     padding: 20px;
-    background: linear-gradient( 180deg , #49464642 , #da743938  , #e28e8e1c);
+    background: linear-gradient(180deg, #49464642, #da743938, #e28e8e1c);
 }
 
-.package-card div , .package-card ul , .package-card li ,.package-card span{
+.package-card div,
+.package-card ul,
+.package-card li,
+.package-card span {
     background-color: transparent;
 }
+
 .package-card .package-name-h {
     margin: 10px 0px;
     color: #ff5e00;
@@ -349,31 +353,949 @@ h2 span:last-child {
     font-weight: 400;
     line-height: 38.4px;
 }
-.package .package-card .package-desc-h ,.package .package-card  .package-feature-h{
+
+.package .package-card .package-desc-h,
+.package .package-card .package-feature-h {
     margin: 10px 0px;
     color: #CD4E17;
     font-size: 12px;
 }
-.package .package-card  .package-price{
-    font-size:30px;
+
+.package .package-card .package-price {
+    font-size: 30px;
 }
-.package .package-card .package-price span{
+
+.package .package-card .package-price span {
     font-size: 16px;
 }
-.package .package-card .package-choose{
+
+.package .package-card .package-choose {
     width: 85%;
     padding: 10px;
     border-radius: 30px;
     border: none;
-    background-color:  #CD4E17;   
+    background-color: #CD4E17;
 }
-.package-card2{
+
+.package-card2 {
     border: 1px solid var(--primary-color);
-    background: linear-gradient( 180deg , #49464642 , #d90a142f, #e28e8e1c);
+    background: linear-gradient(180deg, #49464642, #d90a142f, #e28e8e1c);
 }
-.package .package-card2 .package-choose{
-    background-color:  var(--primary-color);   
+
+.package .package-card2 .package-choose {
+    background-color: var(--primary-color);
 }
-.package .package-card2 .package-desc-h ,.package .package-card2  .package-feature-h{
+
+.package .package-card2 .package-desc-h,
+.package .package-card2 .package-feature-h {
     color: var(--primary-color);
+}
+
+.fitness {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fitness .slider-wrapper {
+    overflow: visible;
+    max-width: 1200px;
+    /* margin: 0 70px 55px; */
+}
+
+.fitness .card-list .card-item {
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    /* background: rgba(255, 255, 255, 0.2); */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.fitness .card-item:hover p,
+.card-item:hover p i {
+    color: #D90A14;
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+
+.fitness .card-item img {
+    width: 100%;
+}
+
+.fitness .card-item p {
+    width: 80%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.fitness .swiper-button-prev {
+    position: relative !important;
+    left: 90% !important;
+    bottom: auto;
+    top: -30px !important;
+}
+
+.fitness .swiper-button-next {
+    position: relative !important;
+    left: 93% !important;
+    bottom: auto;
+    top: -30px !important;
+    top: auto;
+}
+
+.fitness .swiper-button-prev:after,
+.swiper-button-next:after {
+    color: #fff;
+    padding: 10px;
+    background-color: transparent !important;
+    font-size: 20px !important;
+    border: 1px solid #fff;
+}
+
+
+/* testimonials  */
+
+
+
+
+
+.testimonials .data {
+    display: flex;
+    align-items: end;
+}
+
+.testimonials .swiper-wrapper {
+    width: 130%;
+}
+
+.testimonials .slider-wrapper1 {
+    overflow: hidden;
+    /* max-width: 1200px; */
+    /* margin: 0 70px 55px; */
+}
+
+.testimonials .swiper1 {
+    display: flex;
+    align-items: end;
+
+}
+
+.testimonials .card-list .card-item {
+    height: auto;
+    color: #fff;
+    user-select: none;
+    padding: 15px;
+    display: flex;
+    margin: 0px 0px 0px 0px !important;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 10px;
+    /* backdrop-filter: blur(30px); */
+    background: #5B0408;
+    margin-right: 20% !important;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+
+    /* border: 1px solid rgba(255, 255, 255, 0.5); */
+}
+
+.testimonials .card-list div,
+.testimonials .card-list h4 {
+
+    background: #5B0408;
+}
+
+.testimonials .card-list .card-item p {
+    background: #5B0408;
+    font-size: 12px;
+    margin-bottom: 0PX;
+    /* background-color: transparent; */
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    /* Number of lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.testimonials .card-list .card-item .div p {
+    color: #a3a3a3;
+    bottom: 10px;
+    position: relative;
+}
+
+.testimonials .slider-wrapper1 .swiper-pagination-bullet {
+    background-color: transparent;
+    background: #fff;
+    height: 5px;
+    width: 25px;
+    border-radius: 0px;
+    opacity: 0.5;
+}
+
+.testimonials .slider-wrapper1 .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.testimonials .slider-wrapper1 .swiper-slide-button {
+    color: #fff;
+    /* margin-top: -55px; */
+    transition: 0.2s ease;
+}
+
+.testimonials .swiper-slide-button i {
+    font-size: 16px;
+    margin: 5px;
+    color: #ffffff50;
+    border: 1px solid #ffffff50;
+    padding: 5px;
+
+    border-radius: 10px;
+}
+
+.testimonials .swiper-button-prev1 {
+    /* position: relative;
+    right: -93%;
+    bottom: 40px; */
+    z-index: 99999;
+    /* border: 2px solid #fff; */
+    /* display: inline-block; */
+}
+
+.testimonials .swiper-button-next1 {
+    z-index: 99999;
+    /* border: 2px solid #fff; */
+    /* position: relative;
+    right: -93%;
+    bottom: 40px; */
+    /* display: inline-block; */
+}
+
+.swiper-slide-button:hover i {
+    border: 1px solid #fff;
+    transition: all 0.5;
+    color: #fff;
+}
+
+
+/* trainer */
+.Trainer .card-item {
+    /* box-shadow: rgba(91, 4, 8, 0.25) 0px 54px 55px, 
+            rgba(91, 4, 8, 0.12) 0px -12px 30px, 
+            rgba(91, 4, 8, 0.12) 0px 4px 6px, 
+            rgba(91, 4, 8, 0.17) 0px 12px 13px, 
+            rgba(91, 4, 8, 0.09) 0px -3px 5px; */
+    box-shadow: rgba(91, 4, 8, 0.3) 0px 19px 38px, rgba(91, 4, 8, 0.22) 0px 15px 12px;
+
+}
+
+.Trainer img {
+    width: 100%;
+}
+
+.Trainer .swiper-button-prev {
+    position: relative !important;
+    left: 90% !important;
+    bottom: auto;
+    top: -30px !important;
+}
+
+.Trainer .swiper-button-next {
+    position: relative !important;
+    left: 95% !important;
+    bottom: auto;
+    top: -30px !important;
+    top: auto;
+}
+
+.Trainer .swiper-slide-button i {
+    color: #ffffff50;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: transparent !important;
+    font-size: 20px !important;
+    border: 1px solid #ffffff50;
+    border-radius: 10px;
+}
+
+.Trainer .swiper-slide-button:hover i {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
+    background-color: #D90A14 !important;
+    border-radius: 30px !important;
+    transform: scaleX(2) !important;
+}
+
+.swiper-pagination2 {
+    transform: none !important;
+}
+
+.Trainer .card-footer {
+    background-color: #36363685;
+    padding: 10px;
+}
+
+.Trainer .card-footer h4,
+.Trainer .card-footer a i {
+    background-color: transparent;
+}
+
+.Trainer .card-footer p {
+    background-color: transparent;
+    font-size: 14px;
+    position: relative;
+    bottom: 10px;
+}
+
+.Trainer .card-footer a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #fff;
+    /* word-spacing: 10px; */
+    letter-spacing: 1px;
+}
+
+.Trainer .card-footer:hover i {
+    color: #D90A14;
+    font-weight: 700;
+    padding-left: 15px;
+    transition: all 0.5s;
+    transform: scaleX(3);
+
+}
+
+.Trainer-btn button i {
+    color: #ff5e00;
+    font-size: 20px;
+}
+
+.Trainer-btn button {
+    border: 1px solid #ff5e00;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #ff5e00;
+}
+
+.Trainer-btn button:hover,
+.Trainer-btn button:hover i {
+    background-color: #D90A14;
+    color: #fff;
+    border: none;
+    transition: all 0.5s;
+}
+
+
+
+
+
+
+
+/* Fitmaker */
+.Fitmaker-cards .col-6 {
+    padding: 7px 10px;
+}
+
+.Fitmaker-card {
+    background-clip: padding-box;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+
+}
+
+.Fitmaker-card-1 {
+    background-image: url(Img/6\ section\ 1.png);
+    height: 30vw;
+    max-height: 380px;
+}
+
+.Fitmaker-card-2,
+.Fitmaker-card-3,
+.Fitmaker-card-4,
+.Fitmaker-card-5 {
+    max-height: 184px;
+    height: 14.5vw;
+}
+
+.Fitmaker-card-2 {
+    background-image: url(Img/6\ section\ 2.png);
+}
+
+.Fitmaker-card-3 {
+    background-image: url(Img/6\ section\ 3.png);
+}
+
+.Fitmaker-card-4 {
+    background-image: url(Img/6\ section\ 4.png);
+}
+
+.Fitmaker-card-5 {
+    background-image: url(Img/6\ section\ 5.png);
+}
+
+.meow {
+    background: linear-gradient(0deg, #000000, transparent) !important;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+}
+
+.Fitmaker-card p,
+.Fitmaker-card a {
+    background-color: transparent;
+    display: contents;
+}
+
+.Fitmaker-card-1 h4 {
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.Fitmaker-card-2 h4,
+.Fitmaker-card-3 h4,
+.Fitmaker-card-4 h4,
+.Fitmaker-card-5 h4 {
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.Fitmaker-card div,
+.Fitmaker-card span,
+.Fitmaker-card i {
+    background-color: transparent;
+    font-size: 1rem;
+}
+
+.Fitmaker-card-2 span,
+.Fitmaker-card-3 span,
+.Fitmaker-card-4 span,
+.Fitmaker-card-5 span {
+
+    font-size: 0.8rem;
+}
+
+
+
+/* Join */
+.Join .section-heading {
+    font-size: 25px;
+}
+
+.Join p {
+    font-size: 14px;
+    margin: 0px;
+}
+
+/* .Join .col-6{
+
+    box-shadow: rgba(91, 4, 8 ,
+    0.25) 0px 30px 60px -12px inset, rgba(91, 4, 8 , 0.3) 0px 18px 36px -18px inset;
+} */
+.Join .card {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #1d1d1d;
+}
+
+.Join .card h5 {
+    margin: 0%;
+    padding: 10px 0px;
+    font-size: 16px;
+    border: none;
+}
+
+.Join .card h5 span:last-child {
+    color: #D90A14 !important;
+}
+
+.Join .card p {
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+}
+
+.Join .right {
+    background-color: #5B0408;
+    border-radius: 10px;
+    min-height: 25vw;
+    /* height:  100vh; */
+    width: 95%;
+}
+
+.Join .right div {
+    background-color: transparent;
+
+}
+
+.Join .right .f-heading {
+    font-size: 20px;
+}
+
+.f-sign-up {
+    color: #D90A14;
+    border-bottom: 2px solid #D90A14;
+}
+
+.f-login {
+    color: #ffffff50;
+}
+
+.Join .right form {
+    padding: 20px 20px;
+}
+
+.Join .right form,
+.Join .right form label,
+.Join .right form i,
+.Join .right form input,
+.Join form img {
+    background-color: transparent;
+}
+
+.Join .right form input {
+    width: 100%;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.Join .right form i {
+    left: 10px;
+    font-size: 18px;
+    position: relative;
+    bottom: -29px;
+}
+
+.Join .right form input::placeholder {
+    color: #fff;
+    font-size: 16px;
+}
+
+.Join .right form input[type=submit] {
+    margin: 10px 0px;
+    background-color: #D90A14;
+    border: none;
+}
+
+.Join .right form label {
+    bottom: -18px;
+    position: relative;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+
+hr {
+    background: #fff;
+    height: 4px;
+    width: 47% !important;
+    color: #fff;
+}
+
+.Join .right form .google {
+    width: 100%;
+    height: 45px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.faq {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    /* display: flex; */
+    justify-content: center;
+    margin: 10PX 0PX;
+}
+
+.faq-inner {
+    border-radius: 10px;
+    color: #666;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.faq .row button {
+    border-radius: 5px;
+    border: 2px solid #CD4E17 !important;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    font-size: 20px;
+    margin: 0px !important;
+    font-weight: 500;
+}
+
+.faq .row .point:first-child {
+    margin: 0px 0px 10px 0px;
+}
+
+.faq .row .point:last-child {
+    margin: 10px 0px 0px 0px !important;
+}
+
+.faq .row .point {
+    margin: 20px 0px;
+
+}
+
+.faq span:last-child {
+    display: none;
+}
+
+.faq .row p {
+    padding: 10px 10px;
+    font-size: 14px;
+    border-top: none;
+    border-bottom: 2px solid #CD4E17;
+    border-right: 2px solid #CD4E17;
+    border-left: 2px solid #CD4E17;
+    border-radius: 0px 0px 10px 10px;
+    display: none;
+}
+
+.highlight {
+    border: 2px solid #D90A14 !important;
+    border-bottom: none !important;
+    border-radius: 5px 5px 0px 0px;
+    color: #D90A14 !important;
+}
+
+
+footer,
+footer div,
+footer span,
+footer p,
+footer a,
+footer b {
+    background-color: #181818;
+}
+
+footer {
+    /* height: 100vh; */
+    padding: 40px 0px;
+}
+
+footer p {
+    padding: 30px 0px;
+    font-size: 14px;
+    color: #a3a3a3;
+}
+
+footer .red {
+    color: #D90A14;
+}
+
+footer p .orange {
+    color: #ff5e00;
+}
+
+footer .icons i {
+    font-size: 30px;
+}
+
+footer a {
+    color: #fff;
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+
+    .hero .data h2 {
+        font-size: 30px;
+    }
+
+    .hero .data h2 .color {
+        font-size: 50px;
+    }
+
+    .hero .data p {
+        padding: 20px;
+    }
+
+    .hero .data .hero-btn1,
+    .hero .data .hero-btn2 {
+        padding: 10px 20px;
+    }
+
+    .hero .img .box4 {
+        top: -85px;
+        left: -275px;
+    }
+
+    .hero .img .box2 {
+        left: 104px;
+        top: 121px;
+    }
+
+    .package-card {
+        padding: 5px;
+    }
+
+    .fitness .swiper-button-next {
+        left: 92% !important;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .hero .data {
+        margin-bottom: 20px;
+    }
+
+    .hero .data h2 {
+        font-size: 30px;
+    }
+
+    .hero .data h2 .color {
+        font-size: 50px;
+    }
+
+    .hero .data p {
+        padding: 20px;
+    }
+
+    .hero .data .hero-btn1,
+    .hero .data .hero-btn2 {
+        padding: 10px 20px;
+    }
+
+    .hero .img .cirlce1 {
+        display: none;
+    }
+
+    .hero .img .box {
+        z-index: 999999;
+    }
+
+    .hero .img img {
+        position: relative;
+        left: 10%;
+        width: 380px !important;
+    }
+
+    .hero .img .box1 {
+        left: 271px;
+        top: -50px;
+    }
+
+    .hero .img .box4 {
+        top: -85px;
+        left: auto;
+        right: 263px;
+    }
+
+    .hero .img .box2 {
+        left: 150px;
+        top: 121px;
+    }
+
+    .repo .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .repo .repo-card1,
+    .repo .repo-card2,
+    .repo .repo-card3,
+    .repo-card4 {
+        max-width: 350px;
+    }
+
+    .repo .repo-card1,
+    .repo .repo-card3 {
+        border-right: none;
+        border-left: 3px solid transparent;
+        /* border-radius: 5px; */
+        background: linear-gradient(#1d1d1d, #1d1d1d) padding-box,
+            /* Inner background */
+            linear-gradient(180deg, var(--primary-color), #e96547) border-box;
+    }
+
+    .repo .repo-card4 {
+        border-right: 3px solid transparent;
+        /* border-radius: 5px; */
+        background: linear-gradient(#1d1d1d, #1d1d1d) padding-box,
+            /* Inner background */
+            linear-gradient(180deg, var(--primary-color), #e96547) border-box;
+    }
+
+    .Service-cards img {
+        margin: 10px 0px;
+    }
+
+    .package-card {
+        margin-bottom: 30px !important;
+        max-width: 370px;
+        margin: auto;
+    }
+
+    .section-heading {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .fitness .swiper-button-prev {
+        left: 80% !important;
+    }
+
+    .fitness .swiper-button-next {
+        left: 83% !important;
+    }
+
+    section {
+        padding: 25px 0px;
+    }
+
+    .Fitmaker-card {
+        height: 100vw;
+    }
+
+    .fitness .card-item p {
+        margin-bottom: 0.5rem;
+        font-size: 12px;
+        width: 85%;
+    }
+
+    h2 {
+        text-align: center;
+
+    }
+
+    .fitness .slider-wrapper {
+        margin: 0 10px 40px;
+    }
+
+    .faq .row button {
+        font-size: 16px !important;
+        padding: 10px;
+    }
+
+    .faq .row p {
+        font-size: 14;
+    }
+
+    .faq .row {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .hero .data h2 {
+        font-size: 25px;
+    }
+
+    .hero .data h2 .color {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .hero .data p {
+        padding: 9px;
+        font-size: 12px;
+    }
+
+    .hero-btns button {
+        font-size: 12px;
+        padding: 5px 10px !important;
+    }
+
+    .hero .img .cirlce2 {
+        display: none;
+    }
+
+    .hero .img .box {
+        font-size: 9px;
+    }
+
+    .hero .img .box-data {
+        width: 70px;
+    }
+
+    .hero .img .box1 {
+        left: 170px;
+    }
+    .hero .img .box4 {
+        top: -65px;
+        left: auto;
+        right: 169px;
+    }
+    .hero .img .box2 {
+        left: 70px;
+        top: 65px;
+    }
+    .hero .img .box3 {
+        left: -106PX;
+        top: 84px;
+    }
+    .hero .img img {
+        max-width: 80%;
+        left: 0px;
+    }
+        .repo .repo-card1, .repo .repo-card2, .repo .repo-card3, .repo-card4 {
+        max-width: 90%;
+    }
+    p{
+        font-size: 12px;
+    }
+    .package-btns button {
+        padding: 10px 20px;
+    }
+    .package-card {
+        padding: 10px;
+    }
+    .package .package-card .package-name {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .package .package-card .package-name-h  , .package .package-card .package-desc-h{
+        margin: 2px 0px;
+        font-size: 14PX !important;
+        font-weight: 600 !important;
+    }  
+    .package-desc  , 
+    .package-feature{
+        font-size: 14px;
+    }
+    .Fitmaker-card div, .Fitmaker-card span, .Fitmaker-card i , .Fitmaker-card-2 h4, .Fitmaker-card-3 h4, .Fitmaker-card-4 h4, .Fitmaker-card-5 h4 {
+        font-size: 12px;
+    }
+    .Join .card {
+        padding: 0px;
+        font-size: 12px;
+    }
+    .Join .row{
+        --bs-gutter-x: 0.5rem;
+    }
+    .Join .right form {
+        padding: 0px 10px;
+    }
 }

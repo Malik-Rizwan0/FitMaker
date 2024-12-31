@@ -94,8 +94,11 @@ const swiper = new Swiper('.slider-wrapper', {
     // Responsive breakpoints
     breakpoints: {
       0: {
-        slidesPerView: 3
+        slidesPerView: 2
       },
+      400: {
+        slidesPerView: 3
+      },  
       768: {
         slidesPerView: 5
       },
@@ -192,6 +195,7 @@ function toggleDescription(number) {
   const desc = document.getElementById(`desc${number}`);
   const openSymbol = heading.querySelector(".open");
   const closeSymbol = heading.querySelector(".close");
+
 
   // Check if the selected description is visible
   const isVisible = desc.style.display === 'block';

@@ -9,14 +9,13 @@
 }
 .faq-inner{
     border-radius: 10px;
-    border:1px solid #CD4E17 ;
     color: #666;
 
     margin: 0px;
     padding: 0px;
 }
 .faq .row button{
-    border-radius: 10px;
+    border-radius: 5px;
     border: 2px solid #CD4E17 !important;
     display: flex;
     justify-content: space-between;
@@ -40,10 +39,6 @@
 .faq span:last-child{
     display: none;
 }
-.faq .row button:active{
-    border: 2px solid #D90A14 !important;
- 
-}
 .faq .row p{
     padding: 10px 10px;
     font-size: 14px;
@@ -55,6 +50,9 @@
     display: none;
 }
 .highlight{
+    border: 2px solid #D90A14 !important;
+    border-bottom: none !important;
+    border-radius: 5px 5px 0px 0px;
     color: #D90A14 !important;
 }
 @media screen and (max-width:768px) {
