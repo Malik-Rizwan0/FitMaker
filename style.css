@@ -103,6 +103,33 @@ header .header-btn .sign-up:hover {
     color: var(--primary-color);
 }
 
+.mobile-nav{
+    position: absolute;
+    width: 95%;  
+    top: 70px;
+    height: 100vh !important;  
+    margin: auto;
+    z-index: 1000000000000000000;
+    display: none;
+    background-color: #1D1D1D;
+}
+.fa-x{
+    display: none;
+}
+.mobile-nav .links{
+    background-color: #181818;
+    z-index: 9999999999999999;
+    justify-content: start;
+    padding:10px 30PX 30px 10px;
+}
+.mobile-nav .links a{
+    width: 100%;
+    background-color: #181818;
+    padding: 10px;
+}
+.mobile-nav .links a:hover{
+        transform: none !important;
+}
 .hero {
     width: 100%;
 

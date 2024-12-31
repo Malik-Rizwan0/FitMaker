@@ -1,3 +1,21 @@
+let show = document.getElementById("show");
+let hide = document.getElementById("hide");
+let mobileNav = document.getElementById("mobileNav");
+show.addEventListener("click", ()=>{
+  mobileNav.style.display = "block"
+  hide.style.display = "block"
+  show.style.display = "none"
+})
+hide.addEventListener("click", ()=>{
+  mobileNav.style.display = "none"
+  show.style.display = "block"
+  hide.style.display = "none"
+})
+
+
+
+
+
 //Stats (For counting the values)
 function animateValue(obj, start, end, duration) {
     let startTimestamp = null;
