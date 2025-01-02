@@ -1053,14 +1053,15 @@ footer .icons i {
 }
 
 footer a {
-    color: #fff;
+    color: #cac7c7;
     text-decoration: none;
     line-height: 30px;
-
+    font-weight: 400
     
 }
-footer b{
-    font-weight: 500;
+footer .red{
+    font-weight: 700;
+    font-size: 20px;
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
@@ -1241,6 +1242,12 @@ footer b{
 
     .faq .row {
         padding: 5px;
+    }
+    .footerLinks{
+        flex-wrap: wrap;
+    }
+    .footerLinks .hour{
+
     }
 }
 
