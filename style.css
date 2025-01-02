@@ -1245,6 +1245,7 @@ footer .red{
     }
     .footerLinks{
         flex-wrap: wrap;
+        justify-content: flex-start !important;
     }
     .footerLinks .hour{
 
